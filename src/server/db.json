@@ -1,0 +1,118 @@
+{
+  "Customers": [
+    {
+      "id": 1,
+      "customerCode": "4001",
+      "customerName": "Makbolat",
+      "customerAmount": 125.45
+    },
+    {
+      "customerCode": "2323",
+      "customerName": "23",
+      "customerAmout": "023",
+      "id": 2
+    },
+    {
+      "customerCode": "2323",
+      "customerName": "323",
+      "customerAmout": "032323",
+      "id": 3
+    },
+    {
+      "customerCode": "2323",
+      "customerName": "233",
+      "customerAmout": "023333",
+      "id": 4
+    },
+    {
+      "customerCode": "2323",
+      "customerName": "3232",
+      "customerAmout": "023323",
+      "id": 5
+    },
+    {
+      "customerCode": "2323",
+      "customerName": "2323",
+      "customerAmout": "02323",
+      "id": 6
+    },
+    {
+      "customerCode": "1001",
+      "customerName": "MAHMUT",
+      "customerAmout": "33.45",
+      "id": 7
+    },
+    {
+      "customerCode": "1002",
+      "customerName": "mahmut akbolat",
+      "customerAmount": "122.334",
+      "id": 8
+    },
+    {
+      "customerCode": "1245",
+      "customerName": "akbolat",
+      "customerAmount": "2323",
+      "id": 9
+    },
+    {
+      "customerCode": "1224",
+      "customerName": "2323",
+      "customerAmount": "0323",
+      "id": 10
+    },
+    {
+      "customerCode": "2323",
+      "customerName": "323",
+      "id": 11
+    },
+    {
+      "customerCode": "2323",
+      "customerName": "323",
+      "id": 12
+    },
+    {
+      "customerCode": "2323",
+      "customerName": "323",
+      "id": 13
+    },
+    {
+      "customerCode": "2323",
+      "customerName": "323",
+      "id": 14
+    },
+    {
+      "customerCode": "2323",
+      "customerName": "323",
+      "id": 15
+    },
+    {
+      "customerCode": "2323",
+      "customerName": "323",
+      "id": 16
+    },
+    {
+      "customerCode": "4500",
+      "customerName": "452",
+      "customerAmount": "0322",
+      "id": 17
+    },
+    {
+      "customerCode": "1245",
+      "customerName": "434",
+      "customerAmount": "0434",
+      "id": 18
+    },
+    {
+      "customerCode": "2323",
+      "customerName": "232",
+      "customerAmount": "0232",
+      "id": 19
+    },
+    {
+      "customerCode": "2323",
+      "customerName": "232",
+      "customerAmount": "02332",
+      "id": 20
+    }
+  ]
+}

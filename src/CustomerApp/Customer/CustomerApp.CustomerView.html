@@ -1,0 +1,64 @@
+<form [formGroup]="customerModel.formCustomerGroup">
+  Customer Code :
+  <input
+    id="txtcode"
+    formControlName="CustomerCodeControl"
+    [(ngModel)]="customerModel.customerCode"
+    type="text"
+  /><br />
+  Customer Name :
+  <input
+    id="txtname"
+    formControlName="CustomerNameControl"
+    [(ngModel)]="customerModel.customerName"
+    type="text"
+  /><br />
+  Customer Amount :
+  <input
+    id="txtamount"
+    [ngModelOptions]="{standalone: true}"
+    [(ngModel)]="customerModel.customerAmount"
+    type="text"
+  /><br />
+  <input
+    id="btnadd"
+    [disabled]="!(customerModel.formCustomerGroup.valid)"
+    (click)="add()"
+    type="button"
+    value="Add"
+  />
+  <input
+    [disabled]="Disable"
+    (click)="PostToServer()"
+    type="button"
+    value="Send To Server"
+  />
+</form>
+<div
+  *ngIf="customerModel.formCustomerGroup.dirty"
+  [hidden]="!(hasError('pattern', 'CustomerCodeControl'))"
+>
+  Customer code format is not proper
+</div>
+<br />
+<div
+  *ngIf="customerModel.formCustomerGroup.dirty"
+  [hidden]="!(hasError('required', 'CustomerCodeControl'))"
+>
+  Customer code is required
+</div>
+<br />
+<div
+  *ngIf="customerModel.formCustomerGroup.dirty"
+  [hidden]="!(hasError('required', 'CustomerNameControl'))"
+>
+  Customer name is required
+</div>
+<br />
+
+<grid-ui
+  [grid-columns]="[{'colName': 'customerCode'},{'colName': 'customerName'},{'colName': 'customerAmount'}]"
+  [grid-data]="customerModels"
+  (grid-selected)="SelectCustomer($event)"
+>
+</grid-ui>
